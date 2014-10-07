@@ -12,9 +12,7 @@ angular
   .module('examplesApp', [
     'ngResource',
     'ngRoute',
-    'ngFastI18n',
-    'hljs',
-    'ngFontChart'
+    'angular-social-count'
   ])
   .config(function ($routeProvider) {
     $routeProvider
