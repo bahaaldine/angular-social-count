@@ -12,6 +12,7 @@ angular
   .module('examplesApp', [
     'ngResource',
     'ngRoute',
+    'ngOdometer',
     'angular-social-count'
   ])
   .config(function ($routeProvider) {

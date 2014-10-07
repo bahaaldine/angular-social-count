@@ -1,4 +1,4 @@
-/*! angular-social-count - v0.0.5 - 2014-10-07
+/*! angular-social-count - v0.0.6 - 2014-10-07
 * Copyright (c) 2014 ; Licensed  */
   /*! angular-facebook-insight - v0.6.1 - 2014-07-13
 * Copyright (c) 2014 ; Licensed  */
@@ -11,9 +11,7 @@ angular.module("angular-social-count-tpls",
 'use strict';
 
 angular.module("angular-social", ["templates/angular-s3-upload-button.html"]);
-
 var ngSocialCount = angular.module('angular-social-count', ["angular-social-count-tpls"]);
-
 ngSocialCount.directive('ngSocialCount', [ '$http', function($http) {
   return {
     restrict: 'E',
@@ -34,7 +32,8 @@ ngSocialCount.directive('ngFbLikeCount', [ '$http', function($http) {
     restrict: 'E',
     replace: true,
     scope: {
-      url: '@'
+      url: '@',
+      errorCallback: '='
     },
     templateUrl: 'templates/angular-social-count.html',
     link: function(scope, element, attr) {
@@ -42,25 +41,26 @@ ngSocialCount.directive('ngFbLikeCount', [ '$http', function($http) {
     },
     controller: function($scope) { 
       $scope.$watch("url", function(url){
-        if ( url != null ) {
+        if ( url != null && typeof url != "undefined" && url != "") {
           $http({
             method: 'GET'
-            , url: 'https://api.facebook.com/method/fql.query?callback=getFacebook'
+            , url: 'https://api.facebook.com/method/fql.query?callback=getFacebookLikeCount'
             , params: {
               query: 'SELECT like_count FROM link_stat WHERE url="'+url+'"',
               format: 'JSON'
             }
           }).then(function(data) {
-            console.log(data);
             eval(data.data);
           }, function(err){
-            console.log(data);
+            if ( typeof $scope.errorCallback != "undefined" ) {
+              $scope.errorCallback(err);
+            }
           }); 
         }
       });
 
-      $scope.getFacebookLikeCount = function(data) {
-        console.log(data)
+      var getFacebookLikeCount = function(data) {
+        $scope.count = data[0].like_count;
       }
     }
   };
