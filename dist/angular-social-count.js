@@ -1,4 +1,4 @@
-/*! angular-social-count - v0.0.2 - 2014-10-07
+/*! angular-social-count - v0.0.5 - 2014-10-07
 * Copyright (c) 2014 ; Licensed  */
   /*! angular-facebook-insight - v0.6.1 - 2014-07-13
 * Copyright (c) 2014 ; Licensed  */
@@ -38,9 +38,30 @@ ngSocialCount.directive('ngFbLikeCount', [ '$http', function($http) {
     },
     templateUrl: 'templates/angular-social-count.html',
     link: function(scope, element, attr) {
-      console.log(scope.url);
+       
     },
     controller: function($scope) { 
+      $scope.$watch("url", function(url){
+        if ( url != null ) {
+          $http({
+            method: 'GET'
+            , url: 'https://api.facebook.com/method/fql.query?callback=getFacebook'
+            , params: {
+              query: 'SELECT like_count FROM link_stat WHERE url="'+url+'"',
+              format: 'JSON'
+            }
+          }).then(function(data) {
+            console.log(data);
+            eval(data.data);
+          }, function(err){
+            console.log(data);
+          }); 
+        }
+      });
+
+      $scope.getFacebookLikeCount = function(data) {
+        console.log(data)
+      }
     }
   };
 }]);
