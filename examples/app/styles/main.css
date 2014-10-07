@@ -1,0 +1,161 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #2c3e50;
+}
+
+div.languages {
+  text-align: center;
+  margin: 30px 0px;
+} 
+
+div.languages>div {
+} 
+
+div.languages>div>div {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 5px;
+}
+
+div.languages>div.icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 auto 20px auto;
+} 
+
+div.languages>div.icon.fr {
+  background: url('../images/fr.png');
+} 
+
+div.languages>div.icon.en {
+  background: url('../images/en.png');
+} 
+
+div.languages>div.link {
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  margin: 0px 50px;
+  font-size: 14px;
+} 
+
+div.languages>div>div.link:hover { 
+  text-decoration: underline;
+}
+
+div.title {
+  font-family: 'Lobster Two', cursive;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px auto;
+  text-transform: capitalize;
+  color: white;
+}
+
+div.buttons {
+  text-align: center;
+}
+
+div.buttons>div {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+div.genders {
+  margin: 50px 0px;
+  text-align:center;
+}
+
+div.genders>div {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 20px;
+}
+
+div.genders>div>div {
+}
+
+div.genders>div>div.icon {
+  font-size: 90px;
+  margin: 0px 0px 10px 0px;
+} 
+
+div.genders>div>div.icon>.value {
+  display: block;
+  background: #2c3e50 !important;
+  font-size:45px;
+} 
+
+div.genders>div>div.label {
+  display: block;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+div.search {
+  text-align: center;
+}
+
+div.search>input[type="text"] {
+  width: 500px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+footer {
+}
+
+footer>div {
+  position: absolute;
+  color: white;
+  bottom: 40px;
+}
+
+footer>div a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+footer>div a:hover {
+  text-decoration: underline;
+  vertical-align: bottom;
+}
+
+footer>div.twitter {
+  left: 40px;
+}
+
+footer>div.twitter>div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer>div.twitter>div.avatar {
+  margin: 0px 5px 0px 0px;
+  background: url("../images/about.bahaaldine.png");
+  background-size: contain;
+  border: solid 3px white;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+footer>div.github {
+  right: 40px;  
+}
+
+footer>div.github>div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer>div.github>div.icon {
+  font-size: 35px;
+  margin: 0px 5px 0px 0px;
+}
+

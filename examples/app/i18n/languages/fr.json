@@ -1,0 +1,16 @@
+{
+    "id": "fr",
+    "moto": "une meilleure internationlisation",
+    "actions": {
+        "signin": "Se <b>Connecter</b>",
+        "signup": "S'inscrire"
+    },
+    "sex": {
+        "male": "Homme",
+        "female": "Femme"
+    },
+    "search": "Rechercher n'importe quoi",
+    "github": "Voir sur Github",
+    "by": "Par",
+    "with": "avec"
+}
