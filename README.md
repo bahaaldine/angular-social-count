@@ -32,58 +32,5 @@ Add ngSocialCount module to you application
 ```
 
 ## Usage
-Include the **ng-csv-import** element with its options:
-
-```html
-<ng-s3-upload
-     button-class="..."
-     key="..."
-     bucket="..."
-     path="..."
-     success-callback="..."
-     failure-callback="..."
-     progress-callback="..."
-     aws-api="..."
-     aws-region="..."
-     label="..."></ng-s3-upload>
-```
-
-- **button-class**
-
-CSS class for HTML input file element
-
-- **bucket**
-
-AWS S3 Bucket name.
 
 
-- **key**
-
-AWS S3 key. Typically the folder whitin your bucket where you want to upload your stuff
-
-
-- **path**
-
-Path under the AWS S3 key where you want to store the files
-ex: if the bucket if **foo** and the key is **bar** then you can have something like this:
-foo/bar/my_underlying_path_to_files
-
-- **success-callback**
-
-The callback to trigger when upload has succeeded.
-
-- **failure-callback**
-
-The callback to trigger when upload has failed.
-
-- **progress-callback**
-
-The callback to trigger during upload
-
-- **aws-api**
-
-A promise that return AWS S3 token. 
-
-- **label**
-
-A label for your upload button. Usefull for i18n.
