@@ -33,7 +33,7 @@ Add ngSocialCount module to you application
 
 ## Usage
 
-```
+```html
   ...
   <ng-fb-like-count class="counter" url="{{url}}"></ng-fb-like-count>
   <ng-fb-share-count class="counter" url="{{url}}"></ng-fb-share-count>
