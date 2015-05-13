@@ -1,4 +1,4 @@
-/*! angular-social-count - v0.0.9 - 2015-05-13
+/*! angular-social-count - v0.0.11 - 2015-05-13
 * Copyright (c) 2015 ; Licensed  */
   /*! angular-facebook-insight - v0.6.1 - 2014-07-13
 * Copyright (c) 2014 ; Licensed  */
@@ -11,6 +11,7 @@ angular.module("angular-social-count-tpls",
 'use strict';
 
 angular.module("angular-social", ["templates/angular-s3-upload-button.html"]);
+
 var ngSocialCount = angular.module('angular-social-count', ["angular-social-count-tpls"]);
 ngSocialCount.directive('ngSocialCount', [ '$http', function($http) {
   return {
@@ -155,7 +156,7 @@ ngSocialCount.directive('ngFbCommentCount', [ '$http', function($http) {
     }
   };
 }]);
-
+/*
 ngSocialCount.directive('ngTwShareCount', [ '$http', function($http) {
   return {
     restrict: 'E',
@@ -246,7 +247,7 @@ ngSocialCount.directive('ngLnShareCount', [ '$http', function($http) {
       });
     }
   };
-}]);
+}]);*/
 angular.module('templates/angular-social-count.html', []).run(['$templateCache', function($templateCache) {
   'use strict';
 
