@@ -1,4 +1,4 @@
-/*! angular-social-count - v0.0.12 - 2015-05-13
+/*! angular-social-count - v0.0.13 - 2015-05-13
 * Copyright (c) 2015 ; Licensed  */
   /*! angular-facebook-insight - v0.6.1 - 2014-07-13
 * Copyright (c) 2014 ; Licensed  */
@@ -185,7 +185,6 @@ ngSocialCount.directive('ngTwShareCount', [ '$http', function($http) {
   };
 }]);
 
-/*
 ngSocialCount.directive('ngPnShareCount', [ '$http', function($http) {
   return {
     restrict: 'E',
@@ -222,6 +221,7 @@ ngSocialCount.directive('ngPnShareCount', [ '$http', function($http) {
   };
 }]);
 
+/*
 ngSocialCount.directive('ngLnShareCount', [ '$http', function($http) {
   return {
     restrict: 'E',
