@@ -1,8 +1,20 @@
 <div class="search">
-  <div class="input"><input type="text" ng-model="url"></input></div>
-  <ng-fb-like-count class="counter" url="{{url}}"></ng-fb-like-count>
-  <ng-fb-share-count class="counter" url="{{url}}"></ng-fb-share-count>
-  <ng-fb-comment-count class="counter" url="{{url}}"></ng-fb-comment-count>
+  <div class="input">
+    <input type="text" placeholder="type a url here" ng-model="url"></input></div>
+  <ul>
+    <li>
+      <span>Facebook likes : </span>
+      <ng-fb-like-count class="counter" url="{{url}}"></ng-fb-like-count>
+    </li>
+    <li>
+      <span>Facebook shares : </span>
+      <ng-fb-share-count class="counter" url="{{url}}"></ng-fb-share-count>
+    </li>
+    <li>
+      <span>Facebook comments  : </span>
+      <ng-fb-comment-count class="counter" url="{{url}}"></ng-fb-comment-count>
+    </li>
+  </ul>
 </div>
 
 <footer>
