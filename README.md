@@ -33,10 +33,28 @@ Add ngSocialCount module to you application
 
 ## Usage
 
-```html
+```facebook
   ...
   <ng-fb-like-count class="counter" url="{{url}}"></ng-fb-like-count>
   <ng-fb-share-count class="counter" url="{{url}}"></ng-fb-share-count>
   <ng-fb-comment-count class="counter" url="{{url}}"></ng-fb-comment-count>
+  ...
+```
+
+```Twitter
+  ...
+  <ng-tw-share-count class="counter" url="{{url}}"></ng-fb-share-count>
+  ...
+```
+
+```Pinterest
+  ...
+  <ng-pn-share-count class="counter" url="{{url}}"></ng-fb-share-count>
+  ...
+```
+
+```Linkedin
+  ...
+  <ng-ln-share-count class="counter" url="{{url}}"></ng-fb-share-count>
   ...
 ```
