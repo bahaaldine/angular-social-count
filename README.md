@@ -5,6 +5,10 @@
 
 Angular Social Count is a directive that just counts shares, likes, ...etc on social networks.
 
+## Demo page
+
+http://bahaaldine.github.io/angular-social-count
+
 ## Installation
 
 Install depedencies using bower: 
