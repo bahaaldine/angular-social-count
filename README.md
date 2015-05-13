@@ -5,6 +5,10 @@
 
 Angular Social Count is a directive that just counts shares, likes, ...etc on social networks.
 
+## Demo page
+
+http://bahaaldine.github.io/angular-social-count
+
 ## Installation
 
 Install depedencies using bower: 
@@ -33,7 +37,8 @@ Add ngSocialCount module to you application
 
 ## Usage
 
-```facebook
+### Facebook
+```
   ...
   <ng-fb-like-count class="counter" url="{{url}}"></ng-fb-like-count>
   <ng-fb-share-count class="counter" url="{{url}}"></ng-fb-share-count>
@@ -41,19 +46,22 @@ Add ngSocialCount module to you application
   ...
 ```
 
-```Twitter
+### Twitter
+```
   ...
   <ng-tw-share-count class="counter" url="{{url}}"></ng-fb-share-count>
   ...
 ```
 
-```Pinterest
+### Pinterest
+```
   ...
   <ng-pn-share-count class="counter" url="{{url}}"></ng-fb-share-count>
   ...
 ```
 
-```Linkedin
+### Linkedin
+```
   ...
   <ng-ln-share-count class="counter" url="{{url}}"></ng-fb-share-count>
   ...
