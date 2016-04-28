@@ -49,20 +49,20 @@ Add ngSocialCount module to you application
 ### Twitter
 ```
   ...
-  <ng-tw-share-count class="counter" url="{{url}}"></ng-fb-share-count>
+  <ng-tw-share-count class="counter" url="{{url}}"></ng-tw-share-count>
   ...
 ```
 
 ### Pinterest
 ```
   ...
-  <ng-pn-share-count class="counter" url="{{url}}"></ng-fb-share-count>
+  <ng-pn-share-count class="counter" url="{{url}}"></ng-pn-share-count>
   ...
 ```
 
 ### Linkedin
 ```
   ...
-  <ng-ln-share-count class="counter" url="{{url}}"></ng-fb-share-count>
+  <ng-ln-share-count class="counter" url="{{url}}"></ng-ln-share-count>
   ...
 ```
